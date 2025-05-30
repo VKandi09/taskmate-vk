@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/logo.png';
 
 export const Header = () => {
     const [ theme, setTheme ] = useState(JSON.parse(localStorage.getItem("theme")) || "medium");
@@ -13,8 +13,8 @@ export const Header = () => {
   return (
     <header className="header">
         <div className="logo">
-            <img src={Logo} alt="Taskmate logo" />
-            <span>Taskmate</span>
+            <img src={Logo} alt="ToDone logo" />
+            <span>ToDone</span>
         </div>
         <div className="themeSelector">
             <span onClick={() => setTheme("light")} className={ theme === "light" ? "light activeTheme" : "light"}></span>
