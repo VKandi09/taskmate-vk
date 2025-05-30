@@ -2,7 +2,6 @@ import { Header } from './components/Header';
 import { AddTask } from './components/AddTask';
 import { ShowTask } from './components/ShowTask';
 
-import './App.css';
 import { useEffect, useState } from 'react';
 
 function App() {
